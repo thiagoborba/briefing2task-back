@@ -2,7 +2,7 @@
 
 API REST que recebe um briefing bruto de projeto e retorna uma estrutura de tarefas gerada por inteligência artificial. Utiliza o modelo Llama 3.3 70B via Groq API.
 
-> Serve de backend para o [briefing2task-front](https://briefing2task.vercel.app).
+> Serve de backend para o [briefing2task-front](https://github.com/thiagoborba/briefing2task-front) — produção em `https://briefing2task.vercel.app/`
 
 ## Tecnologias
 
