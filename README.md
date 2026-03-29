@@ -2,7 +2,7 @@
 
 API REST que recebe um briefing bruto de projeto e retorna uma estrutura de tarefas gerada por inteligência artificial. Utiliza o modelo Llama 3.3 70B via Groq API.
 
-> Serve de backend para o [briefing2task-front](../briefing2task-front).
+> Serve de backend para o [briefing2task-front](https://briefing2task.vercel.app).
 
 ## Tecnologias
 
@@ -117,7 +117,7 @@ src/
 
 ## Segurança em produção
 
-- Configure `ALLOWED_ORIGINS` com o domínio real do frontend (ex: `https://meuapp.vercel.app`)
+- Configure `ALLOWED_ORIGINS` com o domínio real do frontend (ex: `https://briefing2task.vercel.app`)
 - Use HTTPS — configure no proxy/load balancer (Vercel, Railway, Render, etc.)
 - Considere adicionar `express-rate-limit` para proteger a Groq API de abuso
 - Nunca commite o arquivo `.env`
