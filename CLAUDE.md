@@ -36,7 +36,7 @@ Single-purpose Express 5 API. The full request lifecycle for `POST /analyse-brie
 Key decisions to keep in mind:
 - `entregaveis` is intentionally typed as `string | string[]` because the LLM may return either form; `formatBriefingResult` preserves both shapes.
 - `SYSTEM_PROMPT` and `MAX_BRIEFING_LENGTH` live in `src/constants/index.ts` — edit there to change AI behaviour or input limits.
-- CORS origins are split from `ALLOWED_ORIGINS` env var at startup; the default allows only `http://localhost:5173`.
+- CORS: when `NODE_ENV=development`, all origins are accepted (`origin: true`). In other environments, origins are read from `ALLOWED_ORIGINS` (comma-separated); defaults to `http://localhost:5173` if unset.
 
 ## Deployment
 

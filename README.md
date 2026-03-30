@@ -53,7 +53,7 @@ npm start      # executa dist/index.js
 | ----------------- | ----------- | ------------------------------------------------------------------------------------- |
 | `GROQ_API_KEY`    | Sim         | Chave de API da Groq                                                                  |
 | `PORT`            | Não         | Porta do servidor (padrão: `3000`)                                                    |
-| `ALLOWED_ORIGINS` | Não         | Origens permitidas pelo CORS, separadas por vírgula (padrão: `http://localhost:5173`) |
+| `ALLOWED_ORIGINS` | Não         | Origens permitidas pelo CORS, separadas por vírgula (padrão: `http://localhost:5173`). Ignorado quando `NODE_ENV=development` (todas as origens são aceitas). |
 
 ## Endpoints
 
